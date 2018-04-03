@@ -56,7 +56,7 @@ LONG_DESCRIPTION = (
 
 lib_dirs = ReadConfig('build_ext',
                       'library_dirs',
-                      sysconfig.get_config_var('LIBDIR')).split(':')
+                      sysconfig.get_config_var('LIBDIR')).split(':') + ['/usr/lib/x86_64-linux-gnu/']
 extra_compile_args = ReadConfig('cc_options', 'extra_compile_args', '').split()
 extra_link_args = ReadConfig('cc_options', 'extra_link_args', '').split()
 
