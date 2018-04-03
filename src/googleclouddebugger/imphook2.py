@@ -110,7 +110,7 @@ def _InstallImportHookBySuffix():
 
 # pylint: disable=redefined-builtin, g-doc-args, g-doc-return-or-yield
 def _ImportHookBySuffix(
-    name, globals=None, locals=None, fromlist=None, level=-1):
+    name, globals=None, locals=None, fromlist=None, level=0):
   """Callback when an import statement is executed by the Python interpreter.
 
   Argument names have to exactly match those of __import__. Otherwise calls
